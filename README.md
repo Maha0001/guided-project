@@ -1,4 +1,4 @@
-# **Capstone project: Providing data-driven suggestions for HR**
+# **Google Capstone project: Providing data-driven suggestions for HR**
 
 ## **Project Overview**
 This project aims to help the HR department of Salifort Motors identify factors that contribute to employee attrition using predictive analytics. By analyzing historical employee data, we developed a machine learning model to predict whether an employee is likely to leave the company, enabling the HR team to take proactive measures for improving employee retention.
