@@ -1,68 +1,73 @@
-# Capstone Project: Employee Retention Analysis at Sailfort Motors
+# **HR Analytics and Employee Retention Prediction - Capstone Project**
 
-## Overview
+## **Project Overview**
+This project aims to help the HR department of Salifort Motors identify factors that contribute to employee attrition using predictive analytics. By analyzing historical employee data, we developed a machine learning model to predict whether an employee is likely to leave the company, enabling the HR team to take proactive measures for improving employee retention.
 
-This capstone project allows me to apply and evaluate the data analytical skills I have gained. The project focuses on understanding and improving employee retention at Sailfort Motors, a fictional French-based alternative energy vehicle manufacturer. 
+**Objective**: To build a predictive model that accurately classifies employees who are at risk of leaving the company and provide actionable insights to improve retention.
 
-Through the project, I will:
+## **Dataset**
+The dataset used for this project contains employee records from Salifort Motors, with the following attributes:
+- **satisfaction_level**: Employee's self-reported satisfaction (0-1)
+- **last_evaluation**: Employee's performance review score (0-1)
+- **number_project**: Number of projects the employee is involved in
+- **average_monthly_hours**: Average number of hours worked per month
+- **tenure**: Number of years the employee has been with the company
+- **work_accident**: Whether the employee has had a work-related accident (0/1)
+- **left**: Whether the employee left the company (0/1)
+- **promotion_last_5years**: Whether the employee was promoted in the last five years (0/1)
+- **department**: Employee's department
+- **salary**: Employee's salary level (low, medium, high)
 
-- Set up the team’s workflow.
-- Create a project proposal.
-- Conduct exploratory data analysis (EDA).
-- Build machine learning models.
-- Share insights and recommendations through an executive summary.
-- Interact with internal and external stakeholders.
+You can find the dataset [here](link to dataset).
 
-## Objectives
+## **Project Structure**
+The project is structured as follows:
+- **Data Preprocessing**: Cleaned the dataset by handling duplicates, renaming columns, and engineering features like `overworked` to reflect employees working excessive hours.
+- **Exploratory Data Analysis (EDA)**: Visualized relationships between variables such as satisfaction, tenure, and hours worked to understand patterns and potential causes of attrition.
+- **Modeling**: Built classification models using Logistic Regression, Decision Tree, and Random Forest to predict employee attrition.
+- **Model Evaluation**: Evaluated the models using metrics such as accuracy, precision, recall, F1 score, and AUC score.
 
-The goal of the project is to gather, analyze, and present data to answer questions related to employee retention. This includes:
+## **Installation**
+To run this project locally, you will need to install the following libraries:
 
-1. Analyzing data to identify factors influencing employee attrition.
-2. Building statistical and machine learning models to predict whether an employee will leave the company.
-3. Presenting insights to a non-technical audience, including ethical considerations related to the task.
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn xgboost
+```
 
-## Project Scenario
+## **Usage**
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/HR-Analytics-Capstone.git
+    cd HR-Analytics-Capstone
+    ```
+2. Run the Jupyter Notebook or Python script:
+    ```bash
+    jupyter notebook HR_Analytics_Prediction.ipynb
+    ```
+3. Load the dataset and execute the cells for data exploration, preprocessing, and model building.
 
-### Company Overview: Sailfort Motors
+## **Key Findings**
+From our analysis, we identified several factors that influence employee attrition:
+- Employees with **low satisfaction levels** and **high working hours** are more likely to leave the company.
+- **Tenure** of less than 6 years and **working on 6+ projects** also correlates with higher attrition rates.
+- All employees involved in 7 projects left the company, likely due to burnout.
+  
+The final Random Forest model achieved **96% accuracy** and provided actionable insights for the HR team to reduce attrition.
 
-Sailfort Motors is a leading global manufacturer of alternative energy vehicles. Headquartered in France, Sailfort designs and builds electric, solar, algae, and hydrogen-based vehicles. With a workforce of over 100,000 employees, Sailfort uses a vertically integrated business model, making it a leader in the alternative energy automotive space.
+### **Key Visualizations**
+![Satisfaction vs. Attrition](link_to_visualization)
+> Visualization shows employees with lower satisfaction levels are more likely to leave.
 
-### Business Case: Employee Retention
+## **Conclusion**
+Using this predictive model, the HR department can identify employees at risk of leaving and implement strategies to improve retention, reducing hiring costs and improving workplace satisfaction.
 
-As a data specialist, I have been tasked by the senior leadership team to analyze data from an employee survey. The goal is to identify factors that contribute to employee attrition and develop a predictive model that can help the company reduce turnover. Key variables include department, number of projects, average monthly hours, and others.
+## **Next Steps**
+- Fine-tune the model with additional data such as employee engagement surveys.
+- Automate the predictive model and integrate it into the HR system for continuous monitoring.
 
-## Data Overview
-
-The project uses the **HR_capstone_dataset.csv**, which contains self-reported data from Sailfort Motors employees. 
-
-- **Rows**: 14,999 (one for each employee)
-- **Columns**: 10 (employee attributes)
-
-### Data Dictionary:
-
-| Column Name           | Data Type   | Description                                              |
-|-----------------------|-------------|----------------------------------------------------------|
-| satisfaction_level     | int64       | Employee's satisfaction level (range: 0–1)               |
-| last_evaluation        | int64       | Score of the last performance review (range: 0–1)        |
-| number_project         | int64       | Number of projects the employee contributes to           |
-| average_monthly_hours  | int64       | Average number of hours worked per month                 |
-| time_spend_company     | int64       | Employee tenure at the company (in years)                |
-| work_accident          | int64       | Whether the employee had a work accident (1: Yes, 0: No) |
-| left                   | int64       | Whether the employee left the company (1: Yes, 0: No)    |
-| promotion_last_5years  | int64       | Whether promoted in the last 5 years (1: Yes, 0: No)     |
-| department             | str         | Employee’s department                                    |
-| salary                 | str         | Employee’s salary level (low, medium, or high)           |
-
-## Key Steps
-
-1. **Project Proposal**: Outlining the business problem and goals of the analysis.
-2. **Exploratory Data Analysis (EDA)**: Identifying trends and patterns in the dataset.
-3. **Model Building**: Developing machine learning models to predict employee attrition.
-4. **Ethical Considerations**: Evaluating the ethical impact of predictions on employees' careers.
-5. **Presentation**: Sharing insights and final recommendations with stakeholders.
-
-## Conclusion
-
-This project showcases how data analytics can provide insights into organizational issues like employee retention. The final output will include predictive models, data visualizations, and an executive summary of findings.
+## **Technologies Used**
+- **Languages**: Python
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost
+- **Tools**: Jupyter Notebook, GitHub
 
 ---
