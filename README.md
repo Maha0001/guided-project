@@ -37,8 +37,8 @@ pip install pandas numpy scikit-learn matplotlib seaborn xgboost
 ## **Usage**
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/HR-Analytics-Capstone.git
-    cd HR-Analytics-Capstone
+    git clone https://github.com/Maha0001/guided-project.git
+    cd guided-project
     ```
 2. Run the Jupyter Notebook or Python script:
     ```bash
