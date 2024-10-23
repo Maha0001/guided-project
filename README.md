@@ -1,73 +1,54 @@
-# **Google Capstone project: Providing data-driven suggestions for HR**
+# Google Capstone**HR Analytics: Employee Retention Insights**
 
 ## **Project Overview**
-This project aims to help the HR department of Salifort Motors identify factors that contribute to employee attrition using predictive analytics. By analyzing historical employee data, we developed a machine learning model to predict whether an employee is likely to leave the company, enabling the HR team to take proactive measures for improving employee retention.
+This project aims to provide data-driven insights to help Salifort Motors' HR department improve employee satisfaction and reduce turnover. By analyzing employee data, this project identifies key factors influencing employee retention and offers actionable insights for enhancing workplace satisfaction and productivity.
 
-**Objective**: To build a predictive model that accurately classifies employees who are at risk of leaving the company and provide actionable insights to improve retention.
+**Objective**: Analyze employee data to identify trends, correlations, and insights regarding employee retention, without building predictive models.
 
 ## **Dataset**
-The dataset used for this project contains employee records from Salifort Motors, with the following attributes:
-- **satisfaction_level**: Employee's self-reported satisfaction (0-1)
-- **last_evaluation**: Employee's performance review score (0-1)
-- **number_project**: Number of projects the employee is involved in
+The dataset consists of employee records, with the following features:
+- **satisfaction_level**: Self-reported job satisfaction level [0–1]
+- **last_evaluation**: Score of employee’s last performance review [0–1]
+- **number_project**: Number of projects an employee contributes to
 - **average_monthly_hours**: Average number of hours worked per month
-- **tenure**: Number of years the employee has been with the company
-- **work_accident**: Whether the employee has had a work-related accident (0/1)
+- **tenure**: Number of years with the company
+- **work_accident**: Whether the employee had a work accident (0/1)
 - **left**: Whether the employee left the company (0/1)
-- **promotion_last_5years**: Whether the employee was promoted in the last five years (0/1)
-- **department**: Employee's department
-- **salary**: Employee's salary level (low, medium, high)
+- **promotion_last_5years**: Whether the employee was promoted in the last 5 years (0/1)
+- **department**: Employee’s department
+- **salary**: Employee’s salary level (low, medium, high)
 
-You can find the dataset [here](link to dataset).
+Total rows: **14,999**  
+Columns: **10**  
 
 ## **Project Structure**
-The project is structured as follows:
-- **Data Preprocessing**: Cleaned the dataset by handling duplicates, renaming columns, and engineering features like `overworked` to reflect employees working excessive hours.
-- **Exploratory Data Analysis (EDA)**: Visualized relationships between variables such as satisfaction, tenure, and hours worked to understand patterns and potential causes of attrition.
-- **Modeling**: Built classification models using Logistic Regression, Decision Tree, and Random Forest to predict employee attrition.
-- **Model Evaluation**: Evaluated the models using metrics such as accuracy, precision, recall, F1 score, and AUC score.
-
+- **Data Cleaning**: Renamed columns for consistency, handled missing values, and removed duplicates.
+- **Exploratory Data Analysis (EDA)**: Visualized key trends in employee satisfaction, project workload, working hours, and tenure to uncover factors influencing attrition.
+  
 ## **Installation**
-To run this project locally, you will need to install the following libraries:
-
-```bash
-pip install pandas numpy  matplotlib seaborn 
-```
-
-## **Usage**
-1. Clone the repository:
+1. Download or clone the repository:
     ```bash
     git clone https://github.com/Maha0001/guided-project.git
     cd guided-project
     ```
-2. Run the Jupyter Notebook or Python script:
+2. Use a Python environment with the necessary libraries installed:
     ```bash
-    jupyter notebook salifort-motors-project.ipynb
+    pip install pandas matplotlib seaborn numpy
     ```
-3. Load the dataset and execute the cells for data exploration, preprocessing, and model building.
+
+3. Load and explore the dataset using `salifort-motors-project.ipynb`.
 
 ## **Key Findings**
-From our analysis, we identified several factors that influence employee attrition:
-- Employees with **low satisfaction levels** and **high working hours** are more likely to leave the company.
-- **Tenure** of less than 6 years and **working on 6+ projects** also correlates with higher attrition rates.
-- All employees involved in 7 projects left the company, likely due to burnout.
+- **Overwork**: Employees who work on more projects and longer hours show a higher likelihood of leaving the company.
+- **Tenure**: Employees with a tenure of 4+ years and those who worked on 7 projects all left the company, indicating potential burnout.
+- **Satisfaction**: A direct correlation was found between low satisfaction levels and high attrition rates.
+- **Department Analysis**: No significant department-specific trends were found in relation to attrition, though the most affected departments were sales and technical.
   
-The final Random Forest model achieved **96% accuracy** and provided actionable insights for the HR team to reduce attrition.
-
-### **Key Visualizations**
-![Satisfaction vs. Attrition](link_to_visualization)
-> Visualization shows employees with lower satisfaction levels are more likely to leave.
+## **Visualizations**
+- **Boxplot**: Distribution of monthly hours by the number of projects worked on.
+- **Scatterplot**: Employee satisfaction versus monthly hours, indicating burnout.
+- **Histograms**: Tenure and project workload comparison between employees who left and those who stayed.
+- **Correlation Heatmap**: Shows relationships between variables like satisfaction, evaluation scores, and hours worked.
 
 ## **Conclusion**
-Using this predictive model, the HR department can identify employees at risk of leaving and implement strategies to improve retention, reducing hiring costs and improving workplace satisfaction.
-
-## **Next Steps**
-- Fine-tune the model with additional data such as employee engagement surveys.
-- Automate the predictive model and integrate it into the HR system for continuous monitoring.
-
-## **Technologies Used**
-- **Languages**: Python
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn
-- **Tools**: Jupyter Notebook, GitHub
-
----
+The analysis indicates that employees at Salifort Motors are overworked, and this leads to high attrition. Addressing work-life balance and offering better incentives (like promotions or higher salaries) may improve retention rates.
