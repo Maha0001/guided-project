@@ -31,7 +31,7 @@ The project is structured as follows:
 To run this project locally, you will need to install the following libraries:
 
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost
+pip install pandas numpy  matplotlib seaborn 
 ```
 
 ## **Usage**
@@ -42,7 +42,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn xgboost
     ```
 2. Run the Jupyter Notebook or Python script:
     ```bash
-    jupyter notebook HR_Analytics_Prediction.ipynb
+    jupyter notebook salifort-motors-project.ipynb
     ```
 3. Load the dataset and execute the cells for data exploration, preprocessing, and model building.
 
@@ -67,7 +67,7 @@ Using this predictive model, the HR department can identify employees at risk of
 
 ## **Technologies Used**
 - **Languages**: Python
-- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn
 - **Tools**: Jupyter Notebook, GitHub
 
 ---
