@@ -28,8 +28,8 @@ The project is structured as follows:
 To run this project locally, follow these steps:
 1. Download or clone the repository:
     ```bash
-    git clone https://github.com/yourusername/Stock-Analysis.git
-    cd Stock-Analysis
+    git clone https://github.com/Maha0001/guided-project.git
+    cd guided-project
     ```
 2. Use spreadsheet software (e.g., Excel or Google Sheets) to analyze the data or export the data to your preferred analysis tool like Python for further processing.
 
