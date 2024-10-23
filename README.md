@@ -1,4 +1,4 @@
-# Google Capstone**HR Analytics: Employee Retention Insights**
+# Google Capstone: **HR Analytics: Employee Retention Insights**
 
 ## **Project Overview**
 This project aims to provide data-driven insights to help Salifort Motors' HR department improve employee satisfaction and reduce turnover. By analyzing employee data, this project identifies key factors influencing employee retention and offers actionable insights for enhancing workplace satisfaction and productivity.
